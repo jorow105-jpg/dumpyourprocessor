@@ -6,58 +6,111 @@
 <title>Shopify Payment Fees — What Growth Really Costs Your Store</title>
 <meta name="description" content="Every $10k in monthly Shopify sales costs roughly $320 in processing at standard rates. See what your store really pays and whether you can do better — free review." />
 <link rel="canonical" href="https://www.dumpyourprocessor.com/shopify-fees.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Shopify Payment Fees — What Growth Really Costs Your Store" />
+<meta property="og:description" content="Every $10k in monthly Shopify sales costs roughly $320 in processing at standard rates. See what your store really pays and whether you can do better — free review." />
+<meta property="og:url" content="https://www.dumpyourprocessor.com/shopify-fees.html" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='2' y='2' width='36' height='36' rx='10' fill='%230A1A40'/%3E%3Ctext x='20' y='29' text-anchor='middle' font-family='Arial,sans-serif' font-weight='bold' font-size='26' fill='%23F6B92B'%3E%24%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{--ink:#111726;--navy-900:#0A1A40;--blue:#2356CC;--gold:#F6B92B;--mist:#F1F5FC;--rule:#DDE4F0;--slate:#566179}
+  :root{--ink:#111726;--navy-900:#0A1A40;--navy-800:#0F2452;--blue:#2356CC;--gold:#F6B92B;--mist:#F1F5FC;--rule:#DDE4F0;--slate:#566179;--maxw:920px}
   *{box-sizing:border-box}
   body{margin:0;background:#fff;color:var(--ink);font-family:"Inter",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
   .topbar{border-bottom:1px solid var(--rule);padding:16px 0}
-  .topbar a{font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-style:italic;font-size:21px;text-decoration:none;color:var(--navy-900)}
-  .topbar a span{color:var(--blue)}
-  main{padding:48px 0 72px}
-  h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(30px,5vw,46px);line-height:1.02;margin:0 0 18px}
+  .topbar .row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .topbar a.brand{font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-style:italic;font-size:21px;text-decoration:none;color:var(--navy-900)}
+  .topbar a.brand span{color:var(--blue)}
+  .subnav{display:flex;gap:18px;flex-wrap:wrap}
+  .subnav a{font-size:14px;color:var(--slate);text-decoration:none;font-weight:600}
+  .subnav a:hover{color:var(--blue)}
+  .crumb{font-size:12.5px;color:var(--slate);margin:22px 0 0;font-family:"IBM Plex Mono",ui-monospace,monospace}
+  .crumb a{color:var(--slate);text-decoration:none}
+  .crumb a:hover{color:var(--blue)}
+  main{padding:18px 0 72px}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:600}
+  h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(30px,5vw,46px);line-height:1.02;margin:10px 0 18px}
   h1 em{color:var(--blue);font-style:normal}
-  h2{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;text-transform:uppercase;font-size:22px;margin:36px 0 10px}
+  h2{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;text-transform:uppercase;font-size:22px;margin:36px 0 12px}
   p,li{color:#2c3344}
+  ul.pain{list-style:none;margin:16px 0;padding:0;display:grid;gap:12px}
+  ul.pain li{display:flex;gap:11px;align-items:flex-start;font-size:16px}
+  ul.pain li svg{flex:0 0 auto;margin-top:3px;color:var(--blue)}
   .callout{background:var(--mist);border:1px solid var(--rule);border-radius:12px;padding:18px 20px;margin:24px 0}
   .cta{display:inline-block;background:var(--gold);color:#3a2a00;font-weight:700;text-decoration:none;border-radius:999px;padding:15px 28px;font-size:16.5px;margin-top:10px}
   .cta:hover{background:#ffc740}
   .note{font-size:13px;color:var(--slate)}
-  footer{background:#06122e;color:#8ea0c4;padding:22px 0;font-size:13px}
-  footer a{color:#8ea0c4}
   a{color:var(--blue)}
+  details{border:1px solid var(--rule);border-radius:12px;padding:14px 18px;margin:12px 0;background:#fff}
+  details summary{cursor:pointer;font-weight:600;font-size:15.5px;list-style:none}
+  details summary::-webkit-details-marker{display:none}
+  details summary::before{content:"+ ";color:var(--blue);font-weight:800}
+  details[open] summary::before{content:"\2212 "}
+  details p{margin:10px 0 0;font-size:15px}
+  .cardgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:20px 0 8px}
+  @media(max-width:640px){.cardgrid{grid-template-columns:1fr}}
+  .card{border:1px solid var(--rule);border-radius:14px;padding:18px 20px;text-decoration:none;color:var(--ink);transition:.15s;display:block}
+  .card:hover{border-color:#c5d2ea;box-shadow:0 14px 30px -22px rgba(16,36,82,.4);transform:translateY(-1px)}
+  .card b{display:block;font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;text-transform:uppercase;font-size:16.5px;margin-bottom:5px;color:var(--navy-900)}
+  .card span{font-size:14px;color:var(--slate)}
+  footer{background:#06122e;color:#8ea0c4;padding:26px 0;font-size:13px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+  footer a{color:#8ea0c4;text-decoration:none}
+  footer a:hover{color:#fff}
+  footer .flinks{display:flex;gap:16px;flex-wrap:wrap}
+  footer small{width:100%;font-size:11.5px;color:#5d6f93;line-height:1.6;font-family:"IBM Plex Mono",monospace}
 </style>
 </head>
 <body>
-<header class="topbar"><div class="wrap"><a href="/">Dump<span>YourProcessor</span>.com</a></div></header>
+<header class="topbar"><div class="wrap row">
+  <a class="brand" href="/">Dump<span>YourProcessor</span>.com</a>
+  <nav class="subnav"><a href="/">Home</a><a href="/industries/">Industries</a><a href="/michigan/">Michigan</a><a href="/square-fees.html">Square fees</a><a href="/clover-fees.html">Clover fees</a><a href="/shopify-fees.html">Shopify fees</a></nav>
+</div></header>
 <main>
 <div class="wrap">
-  <h1>Shopify fees: <em>growth gets expensive.</em></h1>
+<p class="crumb"><a href="/">Home</a> / Shopify fees</p>
+<span class="eyebrow">DumpYourProcessor</span>
+<h1>Shopify fees: <em>growth gets expensive.</em></h1>
 
-  <p>Shopify is a phenomenal storefront. But at standard online rates (around 2.9% + 30&cent; per order on the entry plan, per Shopify's published pricing), processing quietly becomes one of your biggest line items as you grow. Every $10,000 in monthly sales costs roughly $320 in fees — $40,000/month is pushing $15,000 a year, before you count the extra penalty Shopify charges if you use an outside payment gateway instead of Shopify Payments.</p>
+<p>Shopify is a phenomenal storefront. But at standard online rates (around 2.9% + 30&cent; per order on the entry plan, per Shopify's published pricing), processing quietly becomes one of your biggest line items as you grow. Every $10,000 in monthly sales costs roughly $320 in fees &mdash; $40,000/month is pushing $15,000 a year, before you count the extra penalty Shopify charges if you use an outside payment gateway instead of Shopify Payments.</p>
 
-  <h2>Ways stores cut this down</h2>
-  <ul>
-    <li><strong>Plan math.</strong> Higher Shopify plans carry lower card rates — sometimes the upgrade pays for itself on processing alone. Most owners never run this math; we will.</li>
-    <li><strong>Retail/in-person volume.</strong> If you also sell in person (pop-ups, showroom, counter), that volume often shouldn't be running at online rates at all.</li>
-    <li><strong>B2B and high-ticket orders.</strong> Large orders are where a percentage point matters most, and where alternative setups (invoicing, level-2/3 data, ACH for wholesale) save real money.</li>
-  </ul>
+<h2>Ways stores cut this down</h2>
+<ul>
+  <li><strong>Plan math.</strong> Higher Shopify plans carry lower card rates &mdash; sometimes the upgrade pays for itself on processing alone. Most owners never run this math; we will.</li>
+  <li><strong>Retail/in-person volume.</strong> If you also sell in person (pop-ups, showroom, counter), that volume often shouldn't be running at online rates at all.</li>
+  <li><strong>B2B and high-ticket orders.</strong> Large orders are where a percentage point matters most, and where alternative setups (invoicing, level-2/3 data, ACH for wholesale) save real money.</li>
+</ul>
 
-  <div class="callout">
-    <strong>Honest caveat:</strong> for a pure-online store doing modest volume, Shopify Payments is often the right answer, and we'll tell you so. The wins are in mixed online/in-person businesses, high volume, and high average tickets.
-  </div>
+<div class="callout"><strong>Honest caveat:</strong> for a pure-online store doing modest volume, Shopify Payments is often the right answer, and we'll tell you so. The wins are in mixed online/in-person businesses, high volume, and high average tickets.</div>
 
-  <h2>Run the numbers on your store — free</h2>
-  <p>Tell us your rough monthly volume and average order size, or send a payouts report. We'll send back a plain-English side-by-side of what you pay now versus your realistic options. One day, no obligation.</p>
+<h2>Run the numbers on your store &mdash; free</h2>
+<p>Tell us your rough monthly volume and average order size, or send a payouts report. We'll send back a plain-English side-by-side of what you pay now versus your realistic options. One day, no obligation.</p>
 
-  <a class="cta" href="/#analyze">Compare my rates free &rarr;</a>
-  <p class="note" style="margin-top:14px">Shopify's published rates as of this writing; check shopify.com for current pricing. Shopify is a trademark of Shopify Inc. — we're not affiliated.</p>
+<a class="cta" href="/#analyze">Compare my rates free &rarr;</a>
+<p class="note" style="margin-top:14px">Shopify's published rates as of this writing; check shopify.com for current pricing. Shopify is a trademark of Shopify Inc. &mdash; we're not affiliated.</p>
+
+<h2>Common questions</h2>
+<details><summary>Do I need to leave Shopify to save money?</summary><p>No — your storefront stays exactly the same. This is about the payment processing underneath it, and in some cases an alternate gateway or plan-tier change, not the platform itself.</p></details>
+<details><summary>Does this work if I sell both online and in person?</summary><p>Yes, and it's often where the biggest savings show up — in-person volume shouldn't be priced at online rates, and a lot of mixed sellers are paying that penalty without knowing it.</p></details>
 </div>
 </main>
-<footer><div class="wrap">© 2026 DumpYourProcessor · <a href="/">Home</a> · <a href="/square-fees.html">Square fees</a> · <a href="/clover-fees.html">Clover fees</a> · <a href="/privacy.html">Privacy</a></div></footer>
+<footer><div class="wrap">
+  <div class="flinks">
+    <a href="/">Home</a>
+    <a href="/industries/">Industries</a>
+    <a href="/michigan/">Michigan</a>
+    <a href="/square-fees.html">Square fees</a>
+    <a href="/clover-fees.html">Clover fees</a>
+    <a href="/shopify-fees.html">Shopify fees</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+  </div>
+  <small>&#169; 2026 DumpYourProcessor (Johnathon Orow) &middot; 2024 Harbor Village Ave, Keego Harbor, MI 48320 &middot; <a href="tel:+12489018838">248-901-8838</a> &middot; Payment processing for businesses across Michigan and nationwide.</small>
+</div></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FinancialService", "name": "DumpYourProcessor", "legalName": "DumpYourProcessor (Johnathon Orow)", "url": "https://www.dumpyourprocessor.com/", "telephone": "+12489018838", "email": "jorow@megapayments.com", "address": {"@type": "PostalAddress", "streetAddress": "2024 Harbor Village Ave", "addressLocality": "Keego Harbor", "addressRegion": "MI", "postalCode": "48320", "addressCountry": "US"}, "areaServed": [{"@type": "State", "name": "Michigan"}, {"@type": "Country", "name": "United States"}], "priceRange": "$$", "description": "Independent merchant-services consulting: statement reviews, interchange-plus processing, and free POS systems for small businesses."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dumpyourprocessor.com/"}, {"@type": "ListItem", "position": 2, "name": "Shopify fees", "item": "https://www.dumpyourprocessor.com/shopify-fees.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need to leave Shopify to save money?", "acceptedAnswer": {"@type": "Answer", "text": "No \u2014 your storefront stays exactly the same. This is about the payment processing underneath it, and in some cases an alternate gateway or plan-tier change, not the platform itself."}}, {"@type": "Question", "name": "Does this work if I sell both online and in person?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and it's often where the biggest savings show up \u2014 in-person volume shouldn't be priced at online rates, and a lot of mixed sellers are paying that penalty without knowing it."}}]}</script>
 </body>
 </html>
